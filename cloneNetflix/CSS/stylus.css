@@ -1,0 +1,91 @@
+/* elementos base*/
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+    
+}
+
+body{
+    background: var(--preto);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/* elementos principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../assets/img/outlander-capa.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 90px;
+    margin-top: 10px;
+}
+
+.titulo{
+    font-size: 40px;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.30);
+    border: none;
+    color: white;
+    cursor: hand;
+    transition: .3s ease-in-out;
+    padding: 15px 10px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.botao:hover{
+    background-color:white;
+    color: var(--preto);
+
+}
+
+.container{
+    margin-left: 15px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
